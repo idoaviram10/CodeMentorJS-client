@@ -10,7 +10,7 @@ import 'ace-builds/src-noconflict/theme-monokai';
 import 'ace-builds/src-noconflict/theme-dracula';
 import 'ace-builds/src-noconflict/theme-clouds_midnight';
 
-const socket = io.connect('http://localhost:3001');
+const socket = io.connect('https://codementorjs-72116aa88715.herokuapp.com/');
 
 export default function CodeBlockEditor() {
 	const { codeBlockId } = useParams();
@@ -25,7 +25,7 @@ export default function CodeBlockEditor() {
 	useEffect(() => {
 		const fetchCode = async () => {
 			try {
-				const response = await fetch(`http://localhost:3001/getCode/${codeBlockId}`);
+				const response = await fetch(`https://codementorjs-72116aa88715.herokuapp.com/getCode/${codeBlockId}`);
 				if (!response.ok) {
 					navigate('/not-found', { replace: true });
 					return;

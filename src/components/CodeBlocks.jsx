@@ -7,7 +7,7 @@ export default function CodeBlocks() {
 	useEffect(() => {
 		const getCodes = async () => {
 			try {
-				const response = await fetch('http://localhost:3001/getCodes');
+				const response = await fetch('https://codementorjs-72116aa88715.herokuapp.com/getCodes');
 				if (!response.ok) {
 					return;
 				}
