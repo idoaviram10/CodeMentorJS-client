@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import AceEditor from 'react-ace';
 import io from 'socket.io-client';
-
-import Modal from './Modal.jsx'; // Import your modal component
+import Modal from './Modal.jsx';
 
 import 'ace-builds/src-noconflict/mode-javascript';
 import 'ace-builds/src-noconflict/theme-monokai';
