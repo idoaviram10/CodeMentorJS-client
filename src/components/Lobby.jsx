@@ -1,5 +1,3 @@
-import { useState, useEffect } from 'react';
-
 import CodeBlocks from './CodeBlocks.jsx';
 
 export default function Lobby() {
