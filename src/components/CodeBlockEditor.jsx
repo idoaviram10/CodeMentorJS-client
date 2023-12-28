@@ -67,7 +67,7 @@ export default function CodeBlockEditor() {
 		setSolutionModalOpen(true);
 	};
 
-	if (!code) {
+	if (!title) {
 		return <div>Loading...</div>;
 	}
 
